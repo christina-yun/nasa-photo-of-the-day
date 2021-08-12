@@ -32,7 +32,6 @@ useEffect(() => {
   })
 })
 
-//Nav
 
   return (
     <div className="App">

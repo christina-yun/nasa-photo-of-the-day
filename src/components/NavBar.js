@@ -1,16 +1,44 @@
 import React from 'react';
+import styled from 'styled-components';
 
-export default function NavBar(props){
+//come back to this
+const StyledNav = styled.nav`
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+    img{
+        height:8vh;
+    }
+
+    div{
+        display:flex;
+        justify-content: space-between;
+        flex-:flex-end;
+    }
+    a{
+        color:black;
+        padding:2rem;
+        text-decoration:none;
+        &:hover{
+            background-color:black;
+            color:white;
+        }
+    }
+    
+`
+
+function NavBar(props){
     return (
-        <nav className='top-nav'>
-                    <image src='#' alt='logo'/>
-                    <div className='navlinks'>
-                        <a href='#'>Home</a>
-                        <a href='#'>Account</a>
-                        <a href='#'>Menu</a>
-                    </div>
-                </nav>
+        <StyledNav>
+            <img src='https://gpm.nasa.gov/sites/default/files/NASA-Logo-Large.jpg' alt='logo'/>
+            <div className='navlinks'>
+                <a href='#'>Home</a>
+                <a href='#'>Account</a>
+                <a href='#'>Menu</a>
+            </div>
+        </StyledNav>
     )
 }
 
-
+export default NavBar;
