@@ -7,26 +7,32 @@ const StylePhotoInfo = styled.div`
         justify-content:center;
         align-items:center;
     }
+    
+    img{
+        height:70vh;
+    }
 
     .info-container{
         display:flex;
         flex-direction:column;
         justify-content:center;
-        margin: 0 7rem;
-        
+        margin: 1rem 10rem 0 10rem;
     }
-    img{
-        width:50%;
-        height:auto;
-    }
+    
     h3{
         margin:0;
+        font-family: 'Poppins';
     }
     h2{
         margin:0;
+        font-family: 'Source Sans Pro';
+        font-weight:800;
     }
     p{
         margin:0;
+        font-family:'Poppins';
+        line-height:1.3;
+        font-size:.8rem;
     }
 `
 

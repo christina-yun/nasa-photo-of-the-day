@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
 //come back to this
@@ -20,6 +20,7 @@ const StyledNav = styled.nav`
         color:black;
         padding:2rem;
         text-decoration:none;
+        font-family:'Poppins';
         &:hover{
             background-color:black;
             color:white;

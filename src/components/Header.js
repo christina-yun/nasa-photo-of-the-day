@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+// import WebFont from 'webfontloader';
 
 const StyleHeader= styled.div`
     display:flex;
@@ -8,6 +9,7 @@ const StyleHeader= styled.div`
     align-items:center;
 h1{
     color:red;
+    font-family:'Source Sans Pro';
 }
 `
 

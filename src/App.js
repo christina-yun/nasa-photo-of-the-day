@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { BASE_URL, API_KEY } from './constants/index';
+import WebFont from 'webfontloader';
 
 import Header from './components/Header'
 import PhotoInfo from './components/PhotoInfo'
@@ -14,6 +15,15 @@ function App() {
   const [name, setName] = useState(null);
   const [description, setDescription] = useState(null);
   const [photographer, setPhotographer] = useState(null);
+//add fonts
+  useEffect(()=> {
+    WebFont.load({
+        google: {
+            families:
+            ['Poppins', 'Source Sans Pro']
+        }
+    });
+}, []);
 
   //fetch data from API
 useEffect(() => {
