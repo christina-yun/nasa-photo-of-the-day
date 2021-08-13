@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { BASE_URL, API_KEY } from './constants/index';
 
-import Header from './components/Header'
-import PhotoInfo from './components/PhotoInfo'
+import NavBar from './components/NavBar';
+import Header from './components/Header';
+import PhotoInfo from './components/PhotoInfo';
 
 import "./App.css";
 
@@ -33,19 +34,11 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <div className='container'>
-            <nav className='top-nav'>
-                <image src='#' alt='logo'/>
-                <div className='navlinks'>
-                    <a href='#'>Home</a>
-                    <a href='#'>Account</a>
-                    <a href='#'>Menu</a>
-                </div>
-            </nav>
-            <Header />
-            <PhotoInfo photo={photo} date ={date} name={name} description={description}  photographer={photographer} />
-        </div>
+      <NavBar /> 
+      <Header />
+      <PhotoInfo photo={photo} date ={date} name={name} description={description}  photographer={photographer} />
     </div>
+  </div>
   );
 }
 
